@@ -2,6 +2,11 @@
 
 This project uses a custom server managed through the `"mcp"` configuration for integration with [MCP](https://marketplace.visualstudio.com/items?itemName=Microsoft.mcp) in Visual Studio Code.
 
+
+> [!TIP]
+> launches an http-echo container mapping port 5678
+
+
 ## Configuration
 
 Add the following to your MCP configuration (for example, in `.vscode/settings.json` or `.mcp/config.json`):
