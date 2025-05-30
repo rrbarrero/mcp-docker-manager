@@ -1,0 +1,24 @@
+[project]
+name = "mcp-docker-manager"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "docker>=7.1.0",
+    "fastmcp>=2.5.2",
+    "pydantic-settings>=2.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-anyio>=0.0.0",
+    "trio>=0.30.0",
+]
+
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "./src/",
+]
