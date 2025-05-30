@@ -48,5 +48,15 @@ def remove_container(container_name: str) -> None:
     client.remove_container_by_name(container_name)
 
 
+@mcp.tool()
+def list_containers() -> list[str]:
+    """
+    List all running containers.
+    Returns:
+        list[str]: A list of container names.
+    """
+    return [container.name for container in client.client.containers.list()]
+
+
 if __name__ == "__main__":
     mcp.run()

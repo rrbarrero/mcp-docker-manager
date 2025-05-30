@@ -21,6 +21,9 @@ class McpDockerClient:
         container = self.client.containers.get(container_name)
         container.remove(force=True)
 
+    def list_containers(self) -> list[str]:
+        return [container.name for container in self.client.containers.list()]
+
     @classmethod
     def default(cls):
         return cls(DockerClient(base_url=settings.docker_socket_path))
