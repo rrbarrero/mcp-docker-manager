@@ -23,9 +23,9 @@ Add the following to your MCP configuration (for example, in `.vscode/settings.j
             "args": [
                 "run",
                 "--directory",
-                "/path/to/mcp-docker-manager/",
+                "/path/to/mcp-docker-manager/src/",
                 "-m",
-                "src.server"
+                "server"
             ]
         }
     }
