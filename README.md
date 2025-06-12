@@ -4,7 +4,7 @@ This project uses a custom server managed through the `"mcp"` configuration for 
 
 
 > [!TIP]
-> Example: "launches an http-echo container mapping port 5678"
+> Example: "*launches an http-echo container mapping port 5678*"
 
 
 ## Configuration
